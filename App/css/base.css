@@ -1,123 +1,30 @@
-/* Base styles and Reset */
-/**
- * Fonts
- */
-/**
- * Colors
- */
-/**
- * Base
- */
-/**
- * Buttons
- */
-/**
- * Dividers
- */
-/**
- * Typography
- */
-/**
- * General Bars Styles
- */
-/**
- * Action Bars
- */
-/**
- * Tab Bar
- */
-/**
- * Spinners
- */
-/**
- * Forms
- */
-/**
- * Dialogs
- */
-/**
- * Toasts
- */
-html,
-body,
-div,
-span,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-section,
-summary,
-time,
-audio,
-video {
-  padding: 0;
-  margin: 0;
-  border: 0; }
+/***************************************************
+*--------------------------------------------------- 
+       Reset & Basics (Inspired by E. Meyers)
+* --------------------------------------------------
+***************************************************/  
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline; }
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block; }
+	body {
+		line-height: 1; }
+	ol, ul {
+		list-style: none; }
+	blockquote, q {
+		quotes: none; }
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none; }
+	table {
+		border-collapse: collapse;
+		border-spacing: 0; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -129,19 +36,25 @@ html {
   -ms-text-size-adjust: 100%;
   background-color: #111111;
   padding-bottom: 1px; }
+  
+  
+/***************************************************
+*--------------------------------------------------- 
+                      Basic styles
+* --------------------------------------------------
+***************************************************/  
 
 body {
-	position: absolute;
+position: absolute;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
 	font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 16px;
-	line-height: 1.67em;
+	height: 100%;
+	font-size: 100%;
 	color: #555;
-	background-color: #f8f8f8;
-}
+	background-color: #f8f8f8; }
 
 a {
 	color: #FFFFFF;
@@ -155,31 +68,90 @@ a {
 .pull-right {
   float: right !important; }
   
-/* Styles */  
+/***************************************************
+*--------------------------------------------------- 
+                      Typography
+* --------------------------------------------------
+***************************************************/  
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 1em;
+	font-weight: bold; }
+
+h1 {
+	font-size: 4.25em; /* 68px */
+	line-height: 1.1471em; }
+
+h2 {
+	font-size: 2.625em; /* 42px */
+	line-height: 1.2381em;
+	margin: 0 0 0.619em; }
+
+h3 {
+	font-size: 1.625em; /* 26px */
+	line-height: 1em;
+	margin: 0 0 1em; }
+
+small {
+	font-size: 0.625em; /* 10px */
+	margin: 0 0 2.6em; }
+.subheader {
+	color: #777; }
+
+p {
+	margin: 0 0 20px 0; }
+p img { 
+	margin: 0; }
+p.lead { 
+	font-size: 21px; 
+	line-height: 27px; 
+	color: #777;  }
+em { font-style: italic; }
+strong { font-weight: bold; color: #333; }
+small { font-size: 80%; }
+
+/*	Blockquotes  */
+	blockquote, blockquote p { font-size: 17px; line-height: 24px; color: #777; font-style: italic; }
+	blockquote { margin: 0 0 20px; padding: 9px 20px 0 19px; border-left: 1px solid #ddd; }
+	blockquote cite { display: block; font-size: 12px; color: #555; }
+	blockquote cite:before { content: "\2014 \0020"; }
+	blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #555; }
+
+	hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 30px; height: 0; }
+  
+/***************************************************
+*--------------------------------------------------- 
+                      Layout
+* --------------------------------------------------
+***************************************************/  
   
 .banner {
-	text-align:center;
-	display:inline-block;
 	color:#fff;
 	background-color:#0099cc;
-	width:100%; 
+	text-align:center;
+	line-height: 0 !important;
 	-webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25) ;
  	-moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25) ;
   	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25) ;
 	}
-.bannertittle {
+.banner .tittle {
+	color:#FFF;
+	font-weight:700;
 	font-size:7em;
-	padding:1.5em 0 1.3em 0;
+	padding:1.2em 0 0.9em 0;
 	}
 .search{
 	text-align:center;
 	}
-	
-	
-	/**
- * Forms
- * --------------------------------------------------
- */
+.search label{
+	margin-top:1.5em;
+	}
+
+/***************************************************
+*--------------------------------------------------- 
+                      Forms
+* --------------------------------------------------
+***************************************************/
 form {
   margin: 0 0 1.42857; }
 
@@ -455,10 +427,11 @@ input[type="radio"][readonly],
 input[type="checkbox"][readonly] {
   background-color: transparent; }
   
-  /**
- * Buttons
- * --------------------------------------------------
- */
+/***************************************************
+*--------------------------------------------------- 
+                      Buttons
+* --------------------------------------------------
+***************************************************/
 .button {
   color: #fff;
   background-color: #333333;
@@ -470,15 +443,16 @@ input[type="checkbox"][readonly] {
   text-align: center;
   text-overflow: ellipsis;
   font-size: 16px;
-
   cursor: pointer; }
-  .button:hover {
-    color: #444444;
-    text-decoration: none; }
-	  .button.button-dark {
-    color: white;
-    background-color: #444444;
-    border-color: #111111; }
-    .button.button-dark:hover {
-      color: white;
-      text-decoration: none; }
+  
+.button:hover {
+  color: #444444;
+  text-decoration: none; }
+.button.button-dark {
+  color: white;
+  background-color: #444444;
+  border-color: transparent; }
+.button.button-dark:hover {
+  color: white;
+  background-color: #333;
+  text-decoration: none; }
