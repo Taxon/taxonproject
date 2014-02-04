@@ -7,15 +7,19 @@
 
     <!-- versionCode is optional and Android only -->
 
-    <name>Livro</name>
+    <name>Taxon</name>
 
     <description>
-        An example for phonegap build docs. 
+        Taxonomy application made easy. 
     </description>
 
     <author href="https://build.phonegap.com" email="support@phonegap.com">
-        Eric Miguel Ribeiro
+        Eric Miguel
     </author>
-    <icon src="icon.png" />
+<preference name="phonegap-version" value="2.9.0" />
+<gap:platform name="ios" />
+<gap:platform name="android" />
+<gap:platform name="winphone" />
+
 
 </widget>

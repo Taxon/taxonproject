@@ -1,66 +1,126 @@
-<!doctype html>
-<html>
+﻿<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="">
+<!--<![endif]-->
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
+<title>Táxon</title>
 
-<title>WebCo - Responsive web design</title>
-<meta name="viewport" content="width=device-width">
-<link href="css/layout.css" rel="stylesheet" type="text/css">
+<!--<link rel="stylesheet" href="css/icomoon.css" />-->
+
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/buttons.css" />
+<link rel="stylesheet" href="css/forms.css" />
+<link rel="stylesheet" href="css/action-bars.css"/>
+<link rel="stylesheet" href="css/tabs.css"/>
+<link rel="stylesheet" href="css/content.css"
+<link rel="stylesheet" href="css/lists.css"/>
+<link rel="stylesheet" href="css/sliders.css"/>
+<link rel="stylesheet" href="css/ionicfonts.css"/>
 <link href="css/skeleton.css" rel="stylesheet" type="text/css">
-<link href="css/base.css" rel="stylesheet" type="text/css">
 
-<style>
+  
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
 
-</style>
+<script src="js/respond.min.js"></script>
+
 </head>
+<body ontouchstart="">
+	<div class="page">
+    
+<!--ACTION BAR-->
+    	<header class="action-bar fixed-top">
+        	<ul class="actions pull-right">
+            	<li>
+                	<a href="javascript: void(0);" class="action" title="Settings" data-ignore="true">
+                    	<i class="ion-navicon-round"></i></a>
+                </li>
+            </ul>
+    	</header>
+<!--ACTION BAR END-->
+        
+<!--TAB-->
+        <nav class="tab-fixed">
+        	<ul class="tab-inner">
+            	<li class="active">
+                	<a href="#home" data-ignore="true">
+                    	home
+                    </a>
+                </li>
+                <li>
+                	<a href="#recente" data-ignore="true">
+                    	recente
+                    </a>
+                </li>
+                <li>
+                	<a href="#sobre" data-ignore="true">
+                    	sobre
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        
+      	<div class="content">
+      		<div class="slider tab-slider">
+        		<ul>
+                	<li id="home" class="tab-item active">
+                    
+                        	<div class="banner">
+                            	<h1 class="bannertittle">Táxon</h1>
+                            </div> 
+                            <div class="container">
+                            <form class="search">
+                              <label class="item-input-wrapper inset">
+                                <input class="inset" type="search" placeholder="digite um nome de um clado ou espécie">
+                              </label>
+                              <button class="button button button-dark">
+                                Buscar
+                              </button>
+                            </form>
+                            </div>
 
-<body>
+                            
+                    </li>
+                    
+                    <li id="recente" class="tab-item">
+                    	<article class="inset">
+                        	<p>Testando item 2</p>
+                        </article>   
+                    </li>
+                    <li id="sobre" class="tab-item">
+                    	<article class="inset">
+                        	<p>Testando item 3</p>
+                        </article>
+                    </li>
+                </ul>
+        	</div>
+        </div>
+<!--TAB END-->
 
-<div class="container">
-	
-		<!--início do cabeçalho-->
-		<header class="sixteen columns">
-			<img class="logo" alt="" src="images/logo.png"/>
-			<select class="topMenuList">
-				<option>home</option>
-				<option>team</option>
-				<option>work</option>
-				<option>clients</option>
-				<option>contact</option>
-			</select>
-			<nav class="sixteen columns alignTopMenu">
-				<ul class="topMenu">
-					<li><a href="#">home</a></li>
-					<li><a href="#">team</a></li>
-					<li><a href="#">work</a></li>
-					<li><a href="#">clients</a></li>
-					<li><a href="#">contact</a></li>
-				</ul>
-			</nav>
-		</header>
-		<!--fim do cabeçalho-->
-		<hr>
-		<section class="thirteen columns welcome">
-			<h1>Creative, responsive <span class="amp">&amp;</span> clean web design</h1>
-			<figure><img class="scale-with-grid" alt="" src="images/devices.png"/></figure>
-			<article><p>Web.co is a little team composed by a <strong>brainstormer designer</strong>, a <strong>mad developer</strong> and a <strong>ingenious SEO especialist</strong>. We create beatifull, functionals and clean websites, and we love to do it. </p></article>
-		</section>
-		
-		<div class="middleSeparator"></div>
-		
-		<section class="ten columns solutions">
-			<figure class="three.columns des"><img class="scale-with-grid" alt="" src="images/solutionDes.png"/><figcaption>Design</figcaption></figure>
-			<figure class="three.columns dev"><img class="scale-with-grid" alt="" src="images/solutionDev.png"/><figcaption>Development</figcaption></figure>
-			<figure class="three.columns seo"><img class="scale-with-grid" alt="" src="images/solutionSEO.png"/><figcaption>Optimization</figcaption></figure> 
-			<p class="seeMore"><a href="">See more solutions >></a></p>
-		</section>
-		
-		<hr>
-		<footer>
-		<p class"copyright">Copyright Web Company 2012 - All rights reserved.</p>
-		</footer>
-	</div>
+
+
+    
+  </div>
+
+
+
+<!--
+<div class="gridContainer clearfix">
+	<div id="div1" class="fluid">
+    Use Insert Panel for additional Fluid Grid Layout Elements. Note: All Fluid Layout tags must be contained within the "gridContainer" div tag.
+    </div>
+</div>
+-->
+    
+<script src="js/fries.min.js"></script>
+<script src="js/fingerblast.js"></script>
+  <script src="js/example.js"></script>
 
 </body>
 </html>
